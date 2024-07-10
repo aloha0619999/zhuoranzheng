@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    background: linear-gradient(45deg,rgb(255, 210, 0),rgb(194, 23, 125),rgb(47, 123, 209));
+}
+.container{
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+.container > .profile{
+    align-self: 2;
+}
+.container > .info{
+    align-self: 3;
+}
+.profile{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    position: sticky;
+    top: 50px;
+}
+.container .profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.container .profile #p1{
+    height: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.container .profile #p2{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: rgb(37, 79, 192);
+}
+.container .profile .btn{
+    width: 85px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    background-color: rgb(36, 126, 200);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.container .profile .btn a{
+    font-size: 17px;
+    color: white;
+    font-family: "微软雅黑";
+    text-decoration: none;
+}
+
+.container .profile .lianxi a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(227, 227, 227);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+.container .profile .lianxi a:hover{
+    background: rgb(15, 103, 192);
+    color: white;
+}
+
+.container .profile .btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.info{
+    width: 850px;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: white;
+    padding: 25px;
+}
+.info .title{
+    height: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    color: rgb(46, 142, 216);
+    align-self: flex-start;
+}
+.info p{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: rgb(135, 135, 135);
+}
+
+.info .introduct .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info .introduct ul{
+    padding: 0;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
+}
+
+.info .introduct ul li{
+    padding-bottom: 20px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: rgb(109, 109, 109);
+}
+
+.info .introduct ul li span{
+    font-size: 17px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+}
+
+.info .jishuzhan{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+.info .jishuzhan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info .jishuzhan .skillbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info .jishuzhan .skillbox img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.info .jishuzhan .skillbox h3{
+    margin: 10px;
+    font-weight: normal;
+    color: rgb(135, 135, 135);
+    font-size: 16px;
+}
+
+.info .major{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.info .major .bar{
+    height: 10px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.info .major .bar div{
+    height: 10px;
+    background-color: rgb(46, 142, 216);
+    border-radius: 10px;
+}
+
+.info .major .per11{
+    width: 315px;
+}
+
+.info .major .per12{
+    width: 280px;
+}
+
+.info .major .per13{
+    width: 227.5px;
+}
+
+.info .major .per14{
+    width: 245px;
+}
+
+.info .major .per21{
+    width: 280px;
+}
+
+.info .major .per22{
+    width: 210px;
+}
+
+.info .major .per23{
+    width: 227.5px;
+}
+
+.info .major .per24{
+    width: 245px;
+}
+
+.info .major .mainfo1,
+.info .major .mainfo2{
+    width: 350px;
+}
+
+.info .major .mainfo1 h3,
+.info .major .mainfo2 h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.info .major .mainfo1 h3 span,
+.info .major .mainfo2 h3 span{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    font-weight: lighter;
+    color: rgb(135, 135, 135);
+}
+
+.info .experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info .experience .exp{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.info .experience .exp p:first-child{
+    color: rgb(15, 103, 192);
+    font-size: 15px;
+    font-family: "微软雅黑";
+    margin: 2px;
+}
+
+.info .experience .exp p:nth-child(3),
+.info .experience .exp p:last-child{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: rgb(135, 135, 135);
+    margin: 2px;
+}
+
+.info .experience .exp h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 20px;
+    color: white;
+}
+
+.info .contact p{
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.info .contact h3{
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+.info .contact .address,
+.info .contact .number,
+.info .contact .email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .contact .address div:first-child,
+.info .contact .number div:first-child,
+.info .contact .email div:first-child{
+    background: rgb(64, 142, 221);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+}
+
+.info .contact .address div:nth-child(2),
+.info .contact .number div:nth-child(2),
+.info .contact .email div:nth-child(2){
+    margin-top: 5px;
+    margin-left: 8px;
+}
